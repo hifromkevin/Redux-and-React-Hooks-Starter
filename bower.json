@@ -1,0 +1,18 @@
+{
+  "name": "redux-and-react-hooks-starter",
+  "description": "A basic template for React and Redux that will eventually be converted into a script that can be run with one line in the command line",
+  "main": "server/index.js",
+  "authors": [
+    "Kevin L."
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/hifromkevin/Redux-and-React-Hooks-Starter",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "client/dist/bower_components",
+    "test",
+    "tests"
+  ]
+}
