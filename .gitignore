@@ -62,3 +62,11 @@ typings/
 
 # package-lock.json 
 package-lock.json
+
+# Font Awesome files
+client/dist/674f50d287a8c48dc19ba404d20fe713.eot
+client/dist/912ec66d7572ff821749319396470bde.svg
+client/dist/b06871f281fee6b241d60582ae9369b9.ttf
+
+# Webpack bundle
+bundle.js
