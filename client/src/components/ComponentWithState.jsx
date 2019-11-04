@@ -2,23 +2,28 @@ import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchInfo } from '../actions';
 
-import InnerComponent from './InnerComponent.jsx';
+import Article from './Article.jsx';
 
 const ComponentWithState = () => {
-  const stateData = useSelector(state => state.stateData);
+  const posts = useSelector(state => state.posts);
   const dispatch = useDispatch();
 
   useEffect(() => {
     dispatch(fetchInfo());
   }, []);
 
+  if (!posts) {
+    return 'Waiting for data'
+  }
+
   return (
     <div className="infoSection">
-      <h1>Component With State</h1>
       <ul>
-      {stateData.map(datas => {
-        return <li><InnerComponent datas={datas} key={datas.id} /></li>
-      })}
+      {
+        posts.map(post => {
+          return <li key={post.id}><Article post={post} /></li>
+        })
+      }
       </ul>
     </div>
   );
