@@ -4,7 +4,8 @@
   "description": "A basic template for React and Redux that will eventually be converted into a script that can be run with one line in the command line",
   "main": "server/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon server/index",
+    "build": "webpack -d --watch"
   },
   "repository": {
     "type": "git",
@@ -34,7 +35,9 @@
     "babel-polyfill": "^6.26.0",
     "css-loader": "^3.2.0",
     "file-loader": "^4.2.0",
+    "font-awesome": "^4.7.0",
     "node-sass": "^4.13.0",
+    "react-fontawesome": "^1.6.1",
     "sass-loader": "^8.0.0",
     "style-loader": "^1.0.0",
     "url-loader": "^2.2.0",
