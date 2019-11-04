@@ -1,0 +1,44 @@
+{
+  "name": "redux-and-react-hooks-starter",
+  "version": "1.0.0",
+  "description": "A basic template for React and Redux that will eventually be converted into a script that can be run with one line in the command line",
+  "main": "server/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hifromkevin/Redux-and-React-Hooks-Starter.git"
+  },
+  "author": "Kevin L.",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hifromkevin/Redux-and-React-Hooks-Starter/issues"
+  },
+  "homepage": "https://github.com/hifromkevin/Redux-and-React-Hooks-Starter#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "google-map-react": "^1.1.5",
+    "react": "^16.11.0",
+    "react-dom": "^16.11.0",
+    "react-redux": "^7.1.1",
+    "redux": "^4.0.4",
+    "redux-promise": "^0.6.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.6.4",
+    "@babel/plugin-proposal-class-properties": "^7.5.5",
+    "@babel/preset-env": "^7.6.3",
+    "@babel/preset-react": "^7.6.3",
+    "babel-loader": "^8.0.6",
+    "babel-polyfill": "^6.26.0",
+    "css-loader": "^3.2.0",
+    "file-loader": "^4.2.0",
+    "node-sass": "^4.13.0",
+    "sass-loader": "^8.0.0",
+    "style-loader": "^1.0.0",
+    "url-loader": "^2.2.0",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10"
+  }
+}
