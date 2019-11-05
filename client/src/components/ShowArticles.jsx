@@ -1,15 +1,15 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { fetchInfo } from '../actions';
+import { fetchPosts } from '../actions';
 
 import Article from './Article.jsx';
 
-const ComponentWithState = () => {
+const ShowArticles = () => {
   const posts = useSelector(state => state.posts);
   const dispatch = useDispatch();
 
   useEffect(() => {
-    dispatch(fetchInfo());
+    dispatch(fetchPosts());
   }, []);
 
   if (!posts) {
@@ -29,4 +29,4 @@ const ComponentWithState = () => {
   );
 };
 
-export default ComponentWithState;
+export default ShowArticles;
